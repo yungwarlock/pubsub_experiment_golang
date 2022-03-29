@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "github.com/nerdraven/pubsub_experiment/protos";
+
+import "google/protobuf/timestamp.proto";
+
+message Event {
+  string id = 1;
+  string name = 2;
+  google.protobuf.Timestamp timestamp = 3;
+}
